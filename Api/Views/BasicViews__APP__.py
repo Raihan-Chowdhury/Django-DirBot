@@ -9,7 +9,7 @@ from .models import Post
 # Create your views here.
 class ShowList(generics.ListAPIView):
     queryset = Post.objects.all()
-    serializer_class = Postserializer
+    serializer_class = Postserializer # .serializers -> PostSerializer
         
 class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.all()
