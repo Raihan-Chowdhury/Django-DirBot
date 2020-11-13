@@ -14,4 +14,3 @@ class Post(models.Model):
         # Ordering Datas
         ordering = ['-created']
         managed = True
-        db_table = 'Post'
